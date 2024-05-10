@@ -2,6 +2,12 @@ import Navbar from "./Navbar";
 import Herobanner from "../assets/Herobannerr.jpg";
 import Feature from "../assets/feature-1.jpg"
 import FeatureBanner from "../assets/banner-2.jpg"
+import Feature2 from "../assets/feature-2.jpg"
+import Feature3 from "../assets/feature-3.jpg"
+import Feature4 from "../assets/feature-4.jpg"
+import CenterBanner from "../assets/center-banner.jpg"
+import { VscArrowRight } from "react-icons/vsc";
+
 
 const Home = () => {
   return (
@@ -56,7 +62,25 @@ const Home = () => {
      <div className=" relative left-44 bottom-24">
       <img src={FeatureBanner} alt="" className=" rounded-2xl"/>
      </div>
+      </div>
+      <div className=" relative ">
+        <div className=" flex flex-col gap-6 relative top-28">
+        <p className=" font-sans text-base text-gray-700 absolute left-80 bottom-4 ">THE CONCEPT</p>
+      
+        </div>
+         <div>
+            <img src={Feature2} alt=""  className="relative bottom-16 left-[864px]"/>
+            <img src={Feature4} alt=""className="relative bottom-2.5 left-[71px] "/>
 
+            <h1 className=" font-branch text-4xl w-[688px] absolute left-[335px] bottom-[415px]">The hotel's distinctive profile is that of an Art hotel that is inspired by and integrated with nature. Our desire to be truly grounded, as well as our love for nature, is never-ending.</h1>
+
+            <img src={Feature3} alt=""  className=" absolute right-[60px] top-[355px]"/>
+            <p className=" font-sans text-base text-gray-700 w-[344px] absolute right-[494px] top-[403px]">We have a holistic philosophy which translates into creating a harmonious environment, complemented by wellness services that aim to detoxify and rejuvenate your mind, body and soul.</p>
+      <h4 className=" font-sans text-base  text-gray-700 absolute right-[740px] top-[573px] flex gap-2">Find out more <VscArrowRight className=" relative top-1" /> </h4>
+         </div>
+      </div>
+      <div>
+        <img src={CenterBanner} alt="" className=" relative top-40" />
       </div>
     </div>
   );
