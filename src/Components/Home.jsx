@@ -7,6 +7,9 @@ import Feature3 from "../assets/feature-3.jpg"
 import Feature4 from "../assets/feature-4.jpg"
 import CenterBanner from "../assets/center-banner.jpg"
 import { VscArrowRight } from "react-icons/vsc";
+import { VscChevronDown } from "react-icons/vsc";
+
+
 
 
 const Home = () => {
@@ -28,12 +31,13 @@ const Home = () => {
           <input type="text" className="bg-transparent border-b-[1px]" />
         </div>
         <div className="flex flex-col relative bottom-48 ">
-          <p className="text-white font-semibold relative bottom-1">Adults*</p>
-          <input type="text" className="bg-transparent border-[1px] h-12 w-72" />
+          <p className="text-white font-semibold relative bottom-1">Adults*</p><VscChevronDown  className="absolute top-[35px] left-[262px] text-white w-[24px] h-[24px]"/>
+          <input type="text" className="bg-transparent border-[1px] h-12 w-72"  />
           
         </div>
         <div className="flex flex-col relative bottom-48">
-          <p className="text-white font-semibold relative bottom-1">Children*</p>
+          <p className="text-white font-semibold relative bottom-1">Children*</p><VscChevronDown className="absolute top-[35px] left-[262px] text-white w-[24px] h-[24px]" />
+
           <input type="text" className="bg-transparent border-[1px] h-12 w-72" />
         </div>
         <button className="bg-white text-blue-900 relative bottom-[168px] h-12 w-72 font-semibold hover:cursor-pointer hover:bg-blue-900 hover:text-white">Search</button>
@@ -76,7 +80,7 @@ const Home = () => {
 
             <img src={Feature3} alt=""  className=" absolute right-[60px] top-[355px]"/>
             <p className=" font-sans text-base text-gray-700 w-[344px] absolute right-[494px] top-[403px]">We have a holistic philosophy which translates into creating a harmonious environment, complemented by wellness services that aim to detoxify and rejuvenate your mind, body and soul.</p>
-      <h4 className=" font-sans text-base  text-gray-700 absolute right-[740px] top-[573px] flex gap-2">Find out more <VscArrowRight className=" relative top-1" /> </h4>
+      <h4 className=" font-sans text-base  text-gray-700 absolute right-[721px] top-[573px] flex gap-2">Find out more <VscArrowRight className=" relative top-1" /> </h4>
          </div>
       </div>
       <div>
